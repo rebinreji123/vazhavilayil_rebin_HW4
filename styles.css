@@ -1,0 +1,119 @@
+
+body{
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-family:monospace;
+}
+
+body::before {
+    content: "";
+    background-image: url(./images/istockphoto-528917900-612x612.jpg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    background-repeat: no-repeat;
+    opacity: 0.41;
+}
+header > h1{
+    text-align: center;
+    padding: 8px;
+    font-family: 'Caveat', cursive;
+}main{ text-align: center;}
+
+article{
+    border-radius: 4px;
+    border-color: white;
+    border-style: dashed;
+
+    border: 8px solid rgb(4, 4, 4);
+
+    display: inline-block;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+   
+
+    text-align: center;
+    width: 25%;
+}
+article > h2{
+    color: rgb(254, 10, 10);
+    padding: 4px 6px;
+
+}
+ul{
+    list-style: none;
+}
+
+article:first-of-type{
+    border-color: rgb(113, 0, 0);
+}
+article:first-of-type h2{
+    color: aqua;
+
+}
+
+#inprogress{ border-color: rgb(41, 23, 1);}
+#inprogress h2{ color: rgb(238, 231, 231)}
+#done{ border-color: rgb(93, 220, 15); }
+#done h2{ color: rgb(249, 249, 249);}
+
+ul li{
+    padding: 6px  8px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+
+} 
+#todo li:nth-child(odd) {
+    background-color: rgb(189, 17, 17);
+
+
+}
+
+#inprogress li:nth-child(even){
+    background-color: rgba(28, 50, 175, 0.686);
+}
+#done li:nth-child(odd){
+    background-color: rgba(14, 90, 18, 0.982);
+}
+
+
+article{
+    width: 100%;
+    margin: 15px 0px;
+}
+main{
+    margin: 0 12px;
+}
+
+@media(min-width:960px) {
+    article{
+        width: 25%;
+        margin: 10px 12px;
+    }
+    main{
+        margin: 0;
+    }
+    
+}
+h2 {
+	font-size: 1.5em;
+	margin-top: 30px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+  
+li {
+	margin-bottom: 10px;
+}
+  
+input[type='checkbox'] {
+	margin-right: 10px;
+}
